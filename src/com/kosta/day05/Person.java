@@ -1,6 +1,7 @@
 package com.kosta.day05;
 /*
 public: 모든패키지에서 접근가능
+protect: 현재 패키지에서 접근가능, 다른패키지에서는 상속받으면 접근가능
 생략(default): 현재패키지에서만 접근가능
 private: 현재 class 에서만 접근가능
  */
@@ -8,8 +9,9 @@ public class Person {
     //final: 1번만 할당가능, 수정불가
     public final String nation = "Korea"; // 1)선언시 초기화
     public final String ssn;
-    public String name;
-    public int age;
+    protected String name;
+    private int age;
+    int score = 100;
 
     //상수
     public static final String COUNTRY = "대한민국";
