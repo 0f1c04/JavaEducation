@@ -2,13 +2,13 @@ package com.kosta.day05;
 
 public class Person {
     //final: 1번만 할당가능, 수정불가
-    final String nation = "Korea"; // 1)선언시 초기화
-    final String ssn;
-    String name;
-    int age;
+    public final String nation = "Korea"; // 1)선언시 초기화
+    public final String ssn;
+    public String name;
+    public int age;
 
     //상수
-    static final String COUNTRY = "대한민국";
+    public static final String COUNTRY = "대한민국";
 
     public Person() {
         this.ssn = null;
