@@ -1,4 +1,5 @@
 package com.kosta.Quiz06;
+
 //19 & 20.
 public class Account {
     static final int MIN_BALANCE = 0;
@@ -8,7 +9,9 @@ public class Account {
     private String owner;
     private int balance;
 
-    public Account() { }
+    public Account() {
+    }
+
     public Account(String ano, String owner, int balance) {
         this.ano = ano;
         this.owner = owner;
@@ -36,7 +39,12 @@ public class Account {
     }
 
     public void setBalance(int balance) {
-        if(balance > MIN_BALANCE && balance < MAX_BALANCE)
+        if (balance > MIN_BALANCE && balance < MAX_BALANCE)
             this.balance = balance;
+    }
+
+    @Override
+    public String toString() {
+        return ano + "  " + owner + "  " + balance;
     }
 }
