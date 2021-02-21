@@ -1,5 +1,5 @@
 package com.kosta.Quiz06;
-
+//13.
 public class MemberService {
     boolean lgoin(String id, String password) {
         boolean result;
