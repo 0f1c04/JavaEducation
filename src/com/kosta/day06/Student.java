@@ -1,4 +1,4 @@
-package com.kosta.day05;
+package com.kosta.day06;
 
 //접근제한자 실습
 

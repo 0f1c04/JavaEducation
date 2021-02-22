@@ -1,4 +1,4 @@
-package com.kosta.day05;
+package com.kosta.day06;
 /*
 public: 모든패키지에서 접근가능
 protect: 현재 패키지에서 접근가능, 다른패키지에서는 상속받으면 접근가능
