@@ -2,6 +2,11 @@ package com.kosta.day06;
 
 import java.util.Scanner;
 
+/**
+ * @author f1c04
+ * Application
+ */
+
 public class QuizBankApplication {
     static Scanner sc = new Scanner(System.in);
     static QuizAccount[] quizAccountArray = new QuizAccount[100];

@@ -1,5 +1,10 @@
 package com.kosta.day06;
 
+/**
+ * @author f1c04
+ * Service
+ */
+
 //19.
 public class QuizAccountExample {
     public static void main(String[] args) {

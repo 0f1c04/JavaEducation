@@ -1,4 +1,9 @@
 package com.kosta.day06;
+
+/**
+ * @author f1c04
+ * DTO
+ */
 //DTO(Data Transfer Object)
 //VO(Value Object)
 

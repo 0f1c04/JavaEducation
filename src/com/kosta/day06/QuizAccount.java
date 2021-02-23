@@ -43,6 +43,8 @@ public class QuizAccount {
             this.balance = balance;
     }
 
+    //@Override : 컴파일러에게 전달
+    //재정의가 맞는지?
     @Override
     public String toString() {
         return ano + "  " + owner + "  " + balance;
