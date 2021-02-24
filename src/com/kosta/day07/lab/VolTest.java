@@ -1,7 +1,5 @@
 package com.kosta.day07.lab;
 
-import com.kosta.day07.interfacetest.TVinterface;
-
 class VolTest {
     public static void main(String args[]) {
         Volume[] v = new Volume[3];

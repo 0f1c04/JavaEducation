@@ -1,4 +1,4 @@
-package com.kosta.day07.interfacetest;
+package com.kosta.day07.interfaceexam;
 
 //interface 구현한 class
 //interface내의 추상 메소드를 반드시 구현할 의무가 있음

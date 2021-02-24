@@ -1,4 +1,4 @@
-package com.kosta.day07.interfacetest;
+package com.kosta.day07.interfaceexam;
 
 //interface: 규격서
 public interface TVinterface {

@@ -1,4 +1,4 @@
-package com.kosta.day07.interfacetest;
+package com.kosta.day07.interfaceexam;
 
 public class TVUser {
     public static void main(String[] args) {
