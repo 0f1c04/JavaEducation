@@ -23,14 +23,14 @@ public class ExceptionTest4 {
     private static void method6() throws MyException {
         System.out.println("method start");
         int score = 70;
-        if(score <= 70) throw new MyException("70이상만 가능");
+        if (score <= 70) throw new MyException("70이상만 가능");
 
         System.out.println("method end");
     }
 
     private static void method5() throws IOException {
         int score = 70;
-        if(score <= 70) throw new IOException("70이상만 가능");
+        if (score <= 70) throw new IOException("70이상만 가능");
         //예외를 일으키고 처리는 하지않음 -> 프로그램 중단
         System.out.println("method3 end");
     }
@@ -47,7 +47,7 @@ public class ExceptionTest4 {
 
     private static void method3() {
         int score = 70;
-        if(score <= 70) throw new RuntimeException("70이상만 가능");
+        if (score <= 70) throw new RuntimeException("70이상만 가능");
         //예외를 일으키고 처리는 하지않음 -> 프로그램 중단
         System.out.println("method3 end");
     }
@@ -61,6 +61,6 @@ public class ExceptionTest4 {
     }
 
     private static void method1() {
-        int a = 10/0;
+        int a = 10 / 0;
     }
 }

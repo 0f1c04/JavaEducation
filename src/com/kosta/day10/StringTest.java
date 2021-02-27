@@ -36,7 +36,7 @@ public class StringTest {
         String s = "배대장,임덕배-그리즐리&아이스베어 판다";
         StringTokenizer st = new StringTokenizer(s, ",|-|&| ");
         System.out.println(st.countTokens());
-        while(st.hasMoreTokens()) {
+        while (st.hasMoreTokens()) {
             System.out.println(st.nextToken());
         }
         System.out.println(st.countTokens());
@@ -46,7 +46,7 @@ public class StringTest {
         //split
         String s = "배대장,임덕배-그리즐리&아이스베어 판다";
         String[] names = s.split(",|-|&| ");
-        for(String n:names) {
+        for (String n : names) {
             System.out.println(n);
         }
     }
@@ -62,7 +62,7 @@ public class StringTest {
 
     private static void method4() throws IOException {
         int a;
-        while((a = System.in.read()) != -1) {
+        while ((a = System.in.read()) != -1) {
             System.out.println(a);
         }
     }
@@ -128,7 +128,7 @@ public class StringTest {
     }
 
     private static int method2(byte[] bytes) {
-        System.out.println("입력>>" );
+        System.out.println("입력>>");
         int count = 0;
         try {
             count = System.in.read(bytes);

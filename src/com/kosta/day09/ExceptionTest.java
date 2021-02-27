@@ -8,13 +8,13 @@ public class ExceptionTest {
 
     private static void method8() {
         try {
-            int a = 10/0;
+            int a = 10 / 0;
             int[] arr = new int[5];
             arr[5] = 100;
             String s = null;
             System.out.println(s.length());
             Object obj = new String("자바");
-            Integer i = (Integer)obj;
+            Integer i = (Integer) obj;
         } catch (ArithmeticException e) {
             System.out.println("0으로 나눌 수 없음");
         } catch (ArrayIndexOutOfBoundsException e) {
@@ -37,7 +37,7 @@ public class ExceptionTest {
         //2) 떠넘긴다.
         try {
             System.out.println("예외발생 가능성있는 코드");
-            int a = 10/0;
+            int a = 10 / 0;
             System.out.println("이문장은 수행안함");
         } catch (Exception e) {
             //ArithmeticException -> RuntimeException -> Exception
@@ -52,8 +52,8 @@ public class ExceptionTest {
         String s = new String("자바");
         Object s2 = new String("자바"); //자동 형변환
         try {
-            String s3 = (String)s2; //강제 형변환
-            Integer i = (Integer)s2;
+            String s3 = (String) s2; //강제 형변환
+            Integer i = (Integer) s2;
         } catch (ClassCastException e) {
             System.out.println(e.getMessage());
         }
@@ -97,7 +97,7 @@ public class ExceptionTest {
         int b = 0;
         try {
             //예외발생 가능성 있는 코
-            System.out.println(a/b);
+            System.out.println(a / b);
         } catch (ArithmeticException aa) {
             System.out.println("0으로 나누기 불가능");
         }
@@ -114,6 +114,6 @@ public class ExceptionTest {
 //            System.out.println("나누는 수는 0이 될 수 없습니다.");
 //            return;
 //        }
-        System.out.println(a/b);
+        System.out.println(a / b);
     }
 }

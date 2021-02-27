@@ -2,11 +2,13 @@ package com.kosta.day09.lab;
 
 class Dice {
     int size;
+
     Dice(int size) {
         this.size = size;
     }
+
     int play() {
-        int number = (int)(Math.random() * size) + 1;
+        int number = (int) (Math.random() * size) + 1;
         return number;
     }
 }
@@ -34,10 +36,10 @@ public class DiceGame {
         Dice dice1 = new Dice(8);
         Dice dice2 = new Dice(8);
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             a = dice1.play();
             b = dice2.play();
-            if(a == b) count++;
+            if (a == b) count++;
         }
 
         return count;

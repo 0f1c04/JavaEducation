@@ -22,12 +22,12 @@ public class LoginExample {
 
     private static void login(String id, String password) throws NotExistsIDException, WrongPasswordException {
         //id가 "blue"가 아니라면 NotExistIDException 발생시킴
-        if(!id.equals("blue")) {
+        if (!id.equals("blue")) {
             throw new NotExistsIDException("아이디가 존재하지 않습니다.");
         }
 
         //password가 "12345"가 아니라면 NotExistIDException 발생시킴
-        if(!password.equals("12345")) {
+        if (!password.equals("12345")) {
             throw new WrongPasswordException("패스워드가 틀립니다.");
         }
     }

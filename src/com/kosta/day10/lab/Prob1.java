@@ -6,15 +6,14 @@ public class Prob1 {
         String cryptoText;
 
         StringBuilder sb = new StringBuilder();
-        for(int i=0; i < plainText.length(); i++) {
-            if(plainText.charAt(i) != ' ') {
+        for (int i = 0; i < plainText.length(); i++) {
+            if (plainText.charAt(i) != ' ') {
                 int s = plainText.charAt(i) + 3;
-                if(s > 122) {
+                if (s > 122) {
                     s -= 122 - 97 + 1;
                 }
-                sb.append((char)s);
-            }
-            else {
+                sb.append((char) s);
+            } else {
                 sb.append(plainText.charAt(i));
             }
         }
@@ -29,18 +28,18 @@ public class Prob1 {
         System.out.println(caesar);
 
         StringBuffer sb = new StringBuffer();
-        for(int i=0; i<caesar.length(); i++) {
+        for (int i = 0; i < caesar.length(); i++) {
             char c = caesar.charAt(i);
-            int intC = (int)c;
-            if(c ==' ') sb.append(c);
+            int intC = (int) c;
+            if (c == ' ') sb.append(c);
             else {
-                if(intC >= 65 && intC <=90) {
+                if (intC >= 65 && intC <= 90) {
                     intC += 3;
-                    if(intC > 90) {
+                    if (intC > 90) {
                         intC -= 26;
                     }
                 }
-                sb.append((char)intC);
+                sb.append((char) intC);
             }
         }
         System.out.println(sb);

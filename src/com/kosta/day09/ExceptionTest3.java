@@ -13,6 +13,7 @@ public class ExceptionTest3 {
         }
         System.out.println("main end");
     }
+
     private static void method2() throws IOException {
         //예외처리
         //2) throws
@@ -20,7 +21,7 @@ public class ExceptionTest3 {
         fr = new FileReader("src/com/kosta/day09/Button.java");
         int i;
         while ((i = fr.read()) != -1) {
-            System.out.print((char)i);
+            System.out.print((char) i);
         }
         fr.close();
         System.out.println("Exception end");
@@ -36,7 +37,7 @@ public class ExceptionTest3 {
             //파일 읽어서 출력
             int i;
             while ((i = fr.read()) != -1) {
-                System.out.print((char)i);
+                System.out.print((char) i);
             }
             System.out.println("try-catch end");
         } catch (FileNotFoundException e) {
@@ -45,7 +46,7 @@ public class ExceptionTest3 {
             e.printStackTrace();
         } finally {
             try {
-                if(fr != null) fr.close();
+                if (fr != null) fr.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }

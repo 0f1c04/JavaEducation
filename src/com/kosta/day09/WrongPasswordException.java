@@ -1,6 +1,6 @@
 package com.kosta.day09;
 
-public class WrongPasswordException extends Exception{
+public class WrongPasswordException extends Exception {
     public WrongPasswordException() {
     }
 

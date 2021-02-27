@@ -1,6 +1,6 @@
 package com.kosta.day09;
 
-public class OuterClass extends Object implements Comparable<OuterClass>{
+public class OuterClass extends Object implements Comparable<OuterClass> {
     //1. field: non-static, static
     //2. constructor
     //3. method:non-static, static
@@ -9,6 +9,7 @@ public class OuterClass extends Object implements Comparable<OuterClass>{
     class InnerClass {
 
     }
+
     static class InnerClass2 {
 
     }

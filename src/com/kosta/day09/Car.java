@@ -2,7 +2,7 @@ package com.kosta.day09;
 
 import java.util.Arrays;
 
-public class Car implements Cloneable{
+public class Car implements Cloneable {
     String model;
     int price;
     String[] 악세사리;
@@ -15,7 +15,7 @@ public class Car implements Cloneable{
 
     public Car(String model, int price) {
         super();
-        this.model = model+"*";
+        this.model = model + "*";
         this.price = price;
     }
 
@@ -31,7 +31,7 @@ public class Car implements Cloneable{
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        Car car = (Car)super.clone(); //얕은복사
+        Car car = (Car) super.clone(); //얕은복사
         car.악세사리 = Arrays.copyOf(this.악세사리, this.악세사리.length); //깊은복사
         return car;
     }
@@ -39,8 +39,8 @@ public class Car implements Cloneable{
     @Override
     public boolean equals(Object obj) {
         //Car -> Object -> Car
-        if(!(obj instanceof Car)) return false;
-        Car cc = (Car)obj;
+        if (!(obj instanceof Car)) return false;
+        Car cc = (Car) obj;
         return model.equals(cc.model) && price == cc.price;
     }
 

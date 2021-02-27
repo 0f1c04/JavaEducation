@@ -17,12 +17,12 @@ public class ClassTest {
 
         //객체얻기
         Object obj = cls2.newInstance();
-        if(obj instanceof Book) {
-            String s = ((Book)obj).getTitle();
+        if (obj instanceof Book) {
+            String s = ((Book) obj).getTitle();
             System.out.println(s);
         }
-        if(obj instanceof Car) {
-            String s = ((Car)obj).getModel();
+        if (obj instanceof Car) {
+            String s = ((Car) obj).getModel();
             System.out.println(s);
         }
     }
@@ -34,10 +34,10 @@ public class ClassTest {
         System.out.println("---------------------");
 
         Method[] methods = cls2.getDeclaredMethods();
-        for(Method m:methods) {
+        for (Method m : methods) {
             System.out.println("함수 이름: " + m.getName());
             Class[] cc = m.getParameterTypes();
-            for(Class c: cc) {
+            for (Class c : cc) {
                 System.out.println("함수 타입: " + c.getName());
             }
         }
@@ -50,7 +50,7 @@ public class ClassTest {
         System.out.println("---------------------");
 
         Field[] fields = cls2.getDeclaredFields();
-        for(Field f:fields) {
+        for (Field f : fields) {
             System.out.println("변수 이름: " + f.getName());
             System.out.println("변수 타입: " + f.getType().getSimpleName());
         }
@@ -68,15 +68,15 @@ public class ClassTest {
         System.out.println("---------------------");
 
 
-       Constructor[] constructor = cls2.getDeclaredConstructors();
-       for(Constructor cc:constructor) {
-           System.out.println("생성자 이름: " + cc.getName());
-           System.out.println("파라메타 개수: " + cc.getParameterCount());
-           Class[] aa = cc.getParameterTypes();
-           for(Class c:aa) {
-               System.out.println(c.getName());
-           }
-       }
+        Constructor[] constructor = cls2.getDeclaredConstructors();
+        for (Constructor cc : constructor) {
+            System.out.println("생성자 이름: " + cc.getName());
+            System.out.println("파라메타 개수: " + cc.getParameterCount());
+            Class[] aa = cc.getParameterTypes();
+            for (Class c : aa) {
+                System.out.println(c.getName());
+            }
+        }
     }
 
     private static void method1() {

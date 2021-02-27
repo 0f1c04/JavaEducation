@@ -29,7 +29,7 @@ public class ObjectTest2 {
         Car car = new Car("BMW", 5000, arr);
         Car car2 = null;
         try {
-            car2 = (Car)car.clone();
+            car2 = (Car) car.clone();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
@@ -62,7 +62,7 @@ public class ObjectTest2 {
 
     private static void method7() {
         //복사 ... 주소의 복사
-        int[] a = {1,2,3,4,5};
+        int[] a = {1, 2, 3, 4, 5};
         int[] b = a; //복사되지않음 ... 같은 주소를 공유
         a[0] = 99;
         System.out.println(Arrays.toString(a));

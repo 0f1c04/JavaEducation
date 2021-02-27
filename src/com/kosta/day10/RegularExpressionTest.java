@@ -16,7 +16,7 @@ public class RegularExpressionTest {
         Matcher m = p.matcher(phone);
         boolean b = m.find();
         System.out.println(b);
-        if(b) {
+        if (b) {
             System.out.println(m.group());
             System.out.println(m.group(1));
             System.out.println(m.group(2));
@@ -31,7 +31,7 @@ public class RegularExpressionTest {
         Pattern p = Pattern.compile(exp);
         Matcher m = p.matcher(name);
         boolean b = m.find();
-        if(b) {
+        if (b) {
             System.out.println(m.group());
             System.out.println(m.group(1));
             System.out.println(m.group(2));
@@ -66,6 +66,18 @@ public class RegularExpressionTest {
  * : 콜론
  * " 더블쿼테이션
  * ' 싱글쿼테이
+ * <p>
+ * RegularExpression
+ * [] 선택    [abc] [a-z]
+ * - 범위     [A-Za-z0-9] A~Z, a~z, 0~9 중 하나
+ * ^ 제외     [^a-z] 소문자는 ㄴㄴ
+ * ^[] 시작   ^a
+ * $ 끝
+ * {숫자} 자리수
+ * {숫자1, 숫자2} 숫자1 ~ 숫자2
+ * ? 0개 또는 1개   a?
+ * * 0개 이상      a* a가 0개 이상
+ * + 1개 이상      a+ a가 1개 이상
  */
 
 /**

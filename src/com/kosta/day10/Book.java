@@ -1,57 +1,60 @@
 package com.kosta.day10;
 
-public class Book implements Cloneable, Comparable<Book>{
-	private String title;
-	private int price;
-	private boolean ebook;
+public class Book implements Cloneable, Comparable<Book> {
+    private String title;
+    private int price;
+    private boolean ebook;
 
-	public Book() {
-	}
+    public Book() {
+    }
 
-	public Book(String title) {
-		this.title = title;
-	}
+    public Book(String title) {
+        this.title = title;
+    }
 
-	public Book(String title, int price, boolean ebook) {
-		super();
-		this.title = title;
-		this.price = price;
-		this.ebook = ebook;
-	}
-	
-	public String getTitle() {
-		return title;
-	}
-	public void setTitle(String title) {
-		this.title = title;
-	}
-	
-	public int getPrice() {
-		return price;
-	}
-	public void setPrice(int price) {
-		this.price = price;
-	}
-	
-	public boolean isEbook() {
-		return ebook;
-	}
-	public void setEbook(boolean ebook) {
-		this.ebook = ebook;
-	}
+    public Book(String title, int price, boolean ebook) {
+        super();
+        this.title = title;
+        this.price = price;
+        this.ebook = ebook;
+    }
 
-	@Override
-	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("Book [title=").append(title).append(", price=").append(price).append(", ebook=").append(ebook)
-				.append("]");
-		return builder.toString();
-	}
+    public String getTitle() {
+        return title;
+    }
 
-	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		return super.clone();
-	}
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public boolean isEbook() {
+        return ebook;
+    }
+
+    public void setEbook(boolean ebook) {
+        this.ebook = ebook;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("Book [title=").append(title).append(", price=").append(price).append(", ebook=").append(ebook)
+                .append("]");
+        return builder.toString();
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 
 //	@Override
 //	public int hashCode() {
@@ -84,10 +87,10 @@ public class Book implements Cloneable, Comparable<Book>{
 //		return true;
 //	}
 
-	@Override
-	public int compareTo(Book newBook) {
-		return price - newBook.price;
-	}
-	
-	
+    @Override
+    public int compareTo(Book newBook) {
+        return price - newBook.price;
+    }
+
+
 }

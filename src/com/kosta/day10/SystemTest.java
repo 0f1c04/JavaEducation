@@ -12,7 +12,7 @@ public class SystemTest {
     private static void method4() {
         Map<String, String> envs = System.getenv();
         Set<String> keys = envs.keySet();
-        for(String s:keys) {
+        for (String s : keys) {
             System.out.println(s + " ==> " + System.getenv(s));
         }
     }
@@ -26,8 +26,8 @@ public class SystemTest {
         //Properties에는 키와 값이 쌍으로 들어있다. Map
         Properties ps = System.getProperties();
         Set<Object> keys = ps.keySet();
-        for(Object obj:keys) {
-            System.out.println(obj +" ==> " + System.getProperty((String)obj));
+        for (Object obj : keys) {
+            System.out.println(obj + " ==> " + System.getProperty((String) obj));
         }
     }
 
