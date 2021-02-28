@@ -5,5 +5,6 @@ public interface Volume {
     int MIN = 0;
 
     void volumeUp(int volLevel);
+
     void volumeDown(int volLevel);
 }

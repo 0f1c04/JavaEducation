@@ -1,6 +1,6 @@
 package com.kosta.day07;
 
-public class BonusAccount extends Account{
+public class BonusAccount extends Account {
     double bonusPoint;
 
     public BonusAccount(String accNo, String ownerName, int balance, int bonusPoint) {

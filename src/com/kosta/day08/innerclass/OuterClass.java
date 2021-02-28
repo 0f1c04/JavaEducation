@@ -38,6 +38,7 @@ public class OuterClass {
         System.out.println(local.price);
         local.printPrice();
     }
+
     //4. static block
     //5. inner class
     //Inner class: Instance member class
@@ -59,6 +60,7 @@ public class OuterClass {
 //      }
 
     }
+
     //Inner class: Static member class
     static class StaticInnerClass {
         int score = 100;

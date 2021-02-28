@@ -19,7 +19,7 @@ public class ListTest {
         alist.add(new Rectangle(10, 20));
         System.out.println(alist.size());
 
-        for(Rectangle r:alist) {
+        for (Rectangle r : alist) {
             System.out.println(r.getArea());
             System.out.println(r.getPerimeter());
         }

@@ -27,8 +27,8 @@ public class RemoteControlExample {
 
     private static void method3(RemoteControl rc) {
         rc.turnOn();
-        if(rc instanceof SmartTelevision) {
-            ((SmartTelevision)rc).search("https://google.com");
+        if (rc instanceof SmartTelevision) {
+            ((SmartTelevision) rc).search("https://google.com");
         }
         rc.setMute(false);
         rc.setVolume(10);

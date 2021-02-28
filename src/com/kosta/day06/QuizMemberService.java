@@ -2,7 +2,7 @@ package com.kosta.day06;
 
 //Service: business logic(업무로직)
 public class QuizMemberService {
-    QuizMember login (QuizMember quizMember) {
+    QuizMember login(QuizMember quizMember) {
         if (quizMember.getId().equals("hong") && quizMember.getPassword().equals("12345")) {
             quizMember.setName("홍길동");
             quizMember.setAge(20);

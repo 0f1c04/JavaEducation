@@ -1,7 +1,7 @@
 package com.kosta.day07.lab;
 
 class VolTest {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Volume[] v = new Volume[3];
         v[0] = new Speaker();
         v[1] = new Radio();

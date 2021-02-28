@@ -1,6 +1,6 @@
 package com.kosta.day07;
 
-public class CheckingAccount extends Account{
+public class CheckingAccount extends Account {
     //1. Field
     String cardNo;
 
@@ -18,7 +18,7 @@ public class CheckingAccount extends Account{
 
     //3. Method
     public int pay(String cardNo, int amount) {
-        if(!cardNo.equals(this.cardNo)) {
+        if (!cardNo.equals(this.cardNo)) {
             System.out.println("카드번호가 맞지 않습니다.");
             return 0;
         }

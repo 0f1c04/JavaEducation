@@ -8,7 +8,7 @@ public class Exam01 {
         arr[2] = new Staff("최대리", "대리", 1200000);
         arr[3] = new Staff("박사원", "사원", 1000000);
 
-        for(Staff stf : arr) {
+        for (Staff stf : arr) {
             stf.print();
         }
     }

@@ -77,6 +77,7 @@ public class Car {
         System.out.println("instance block: instance 생성마다 수행");
         System.out.println("***********************************");
     }
+
     static {
         System.out.println("static block: class가 load시에 수행 (한 번)");
         System.out.println("***************************************");

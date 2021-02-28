@@ -1,6 +1,6 @@
 package com.kosta.day08;
 
-public class Audio implements RemoteControl{
+public class Audio implements RemoteControl {
     private int volume;
 
     @Override
@@ -15,9 +15,9 @@ public class Audio implements RemoteControl{
 
     @Override
     public void setVolume(int volume) {
-        if(volume > RemoteControl.MAX_VALUE) {
+        if (volume > RemoteControl.MAX_VALUE) {
             this.volume = RemoteControl.MAX_VALUE;
-        } else if(volume < RemoteControl.MIN_VALUE) {
+        } else if (volume < RemoteControl.MIN_VALUE) {
             this.volume = RemoteControl.MIN_VALUE;
         } else {
             this.volume = volume;

@@ -20,7 +20,7 @@ class Duck {
 
     @Override
     public String toString() {
-        return "오리의 이름은 "+name+" 입니다.";
+        return "오리의 이름은 " + name + " 입니다.";
     }
 }
 
@@ -44,15 +44,15 @@ class Sparrow {
 
     @Override
     public String toString() {
-        return "참새의 이름은 "+name+" 입니다.";
+        return "참새의 이름은 " + name + " 입니다.";
     }
 }
 
 public class PlayBird {
     public static void main(String[] args) {
         //static은 객체생성(new)과 무관하다.
-        System.out.println("오리의 다리수는 "+Duck.legs);
-        System.out.println("참새의 다리수는 "+Sparrow.legs);
+        System.out.println("오리의 다리수는 " + Duck.legs);
+        System.out.println("참새의 다리수는 " + Sparrow.legs);
 
         Duck d = new Duck();
         d.name = "꽥꽥이";

@@ -15,7 +15,9 @@ public class MyClass {
         rc = new Audio();
     }
 
-    void setRc(RemoteControl rc) { this.rc = rc; }
+    void setRc(RemoteControl rc) {
+        this.rc = rc;
+    }
 
     @Override
     public String toString() {

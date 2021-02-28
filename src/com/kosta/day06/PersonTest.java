@@ -2,7 +2,7 @@ package com.kosta.day06;
 
 import com.kosta.day05.Person;
 
-public class PersonTest extends Person{
+public class PersonTest extends Person {
     void print() {
         System.out.println(name); //name은 Person을 상속받았기 때문에 protected지만 사용가능
         //System.out.println(age); //age는 private이라 접근 불가

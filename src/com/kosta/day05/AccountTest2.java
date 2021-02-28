@@ -6,11 +6,11 @@ public class AccountTest2 {
         Account[] arr = new Account[3];
 
         //2.객체생성
-        for(int i = 0; i < arr.length; i++) {
-            arr[i] = new Account(i+1 + "계좌");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = new Account(i + 1 + "계좌");
         }
         //3.객체접근
-        for(Account acc:arr) {
+        for (Account acc : arr) {
             acc.save(10);
         }
     }

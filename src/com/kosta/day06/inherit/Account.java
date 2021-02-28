@@ -16,7 +16,7 @@ public class Account {
     }
 
     public int withdraw(int amount) {
-        if(amount > balance) {
+        if (amount > balance) {
             System.out.println("잔액부족");
             return 0;
         }

@@ -2,11 +2,12 @@ package com.kosta.day08;
 
 public interface Volume {
     //1. 상수 (public static final)
-    public static final String TITLE="볼륨";
-    public static final String TITLE2="볼륨2";
+    String TITLE = "볼륨";
+    String TITLE2 = "볼륨2";
 
     //2. 추상 메소드
     void volumeUp(int volLevel);
+
     void volumeDown(int volLevel);
     //interface에 추상메소드가 추가되면 implement 받은 class들에 영향을 미친다. 즉 추상메소드는 반드시 구현한다.
 

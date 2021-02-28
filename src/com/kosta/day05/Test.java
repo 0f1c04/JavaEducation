@@ -18,7 +18,7 @@ public class Test {
 
     static void printBookInfo(Book[] booklist2) {
         booklist2[0].setTitle("자바");
-        for(Book b:booklist2) {
+        for (Book b : booklist2) {
             System.out.println(b.getTitle());
         }
     }
@@ -35,8 +35,8 @@ public class Test {
         title2 += "님";
         System.out.println(System.identityHashCode(title1) + "\n" + System.identityHashCode(title2));
 
-        String title3 = new String("부장");
-        String title4 = new String("부장");
+        String title3 = "부장";
+        String title4 = "부장";
         System.out.println(System.identityHashCode(title3) + "\n" + System.identityHashCode(title4));
     }
 }

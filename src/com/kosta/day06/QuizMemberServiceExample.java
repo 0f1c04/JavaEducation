@@ -7,7 +7,7 @@ public class QuizMemberServiceExample {
         QuizMember quizMember = new QuizMember(null, "hong", "12345", 0);
 
         QuizMember result = quizMemberService.login(quizMember);
-        if (quizMember!=null) {
+        if (quizMember != null) {
             System.out.println("로그인 되었습니다.");
             quizMemberService.logout(quizMember.getName());
         } else {

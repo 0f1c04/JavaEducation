@@ -1,7 +1,7 @@
 package com.kosta.day06.inherit;
 
-public class CheckingAccount extends Account{
-//    String accNo;
+public class CheckingAccount extends Account {
+    //    String accNo;
 //    String ownerName;
 //    int balance;
     String cardNo;

@@ -1,4 +1,5 @@
 package com.kosta.day08.innerclass;
+
 //inner class 예제
 public class ClassRoom {
     String title1 = "instance 변수";
@@ -9,11 +10,13 @@ public class ClassRoom {
         String title3 = "instance inner class ... instance 변수";
         //불가능 static String title4 = "static 변수";
     }
+
     //2. static inner class
     static class Chair {
         String title5 = "static inner class ... instance 변수";
         static String title6 = "static inner class ... static 변수";
     }
+
     //3. local inner class
     void test(String param, String param2) {
         final String title8 = "local변수";

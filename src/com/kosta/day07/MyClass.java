@@ -2,7 +2,7 @@ package com.kosta.day07;
 
 //final Class, final Method
 
-public class MyClass extends Object{
+public class MyClass extends Object {
     public MyClass() {
         super();
     }

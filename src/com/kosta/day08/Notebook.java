@@ -1,6 +1,6 @@
 package com.kosta.day08;
 
-public class Notebook implements Volume{
+public class Notebook implements Volume {
     int volLevel;
 
     void test() {

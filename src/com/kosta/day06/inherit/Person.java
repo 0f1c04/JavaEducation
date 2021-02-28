@@ -11,7 +11,9 @@ public class Person {
         this.phone = phone;
     }
 
-    void exercise() { System.out.println("운동한다."); }
+    void exercise() {
+        System.out.println("운동한다.");
+    }
 
     void eat() {
         System.out.println("먹는다.");

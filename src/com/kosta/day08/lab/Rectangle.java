@@ -1,6 +1,6 @@
 package com.kosta.day08.lab;
 
-public class Rectangle extends Shape implements Resizable{
+public class Rectangle extends Shape implements Resizable {
     private double width;
     private double height;
 

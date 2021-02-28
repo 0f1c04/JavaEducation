@@ -1,4 +1,5 @@
 package com.kosta.day06;
+
 /*
 public: 모든패키지에서 접근가능
 protect: 현재 패키지에서 접근가능, 다른패키지에서는 상속받으면 접근가능
@@ -44,7 +45,7 @@ public class Person {
     public static void main(String[] args) {
         new Person().test2();
 
-        String s = new String("자바프로그램").substring(0, 2);
+        String s = "자바프로그램".substring(0, 2);
         System.out.println(s);
     }
 }

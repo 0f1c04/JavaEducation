@@ -4,12 +4,15 @@ interface SuperInterface {
     void method5();
 }
 
-interface A extends SuperInterface{
+interface A extends SuperInterface {
     void method1(); //추상 메소드
+
     void method2(); //추상 메소드
 }
-interface B extends SuperInterface{
+
+interface B extends SuperInterface {
     void method3(); //추상 메소드
+
     void method4(); //추상 메소드
 }
 
@@ -118,9 +121,9 @@ public class interfaceTest {
     private static void infoPrint(A aa) {
         aa.method1();
         aa.method2();
-        if(aa instanceof B) {
-            ((B)aa).method3();
-            ((B)aa).method4();
+        if (aa instanceof B) {
+            ((B) aa).method3();
+            ((B) aa).method4();
         }
         System.out.println("=======================");
     }
@@ -128,9 +131,9 @@ public class interfaceTest {
     private static void infoPrintB(B aa) {
         aa.method3();
         aa.method4();
-        if(aa instanceof A) {
-            ((A)aa).method1();
-            ((A)aa).method1();
+        if (aa instanceof A) {
+            ((A) aa).method1();
+            ((A) aa).method1();
         }
         System.out.println("=======================");
     }

@@ -17,23 +17,23 @@ public class AccountTest2 {
     }
 
     private static void castingAccount(Account[] accounts) {
-        for(Account arr:accounts) {
-            if(arr instanceof CreditLineAccount) {
+        for (Account arr : accounts) {
+            if (arr instanceof CreditLineAccount) {
                 System.out.println("=========Casting CreditLineAccount");
                 //new CreditLineAccount() -> Account -> CreditLineAccount
                 CreditLineAccount creditLineAccount = (CreditLineAccount) arr;
                 System.out.println("마이너스한도: " + creditLineAccount.getCreditLine());
-            }else if(arr instanceof BonusAccount) {
+            } else if (arr instanceof BonusAccount) {
                 System.out.println("=========Casting BonusAccount");
                 //new BonusAccount() -> Account -> BonusAccount
                 arr.deposit(1000);
                 BonusAccount bonusAccount = (BonusAccount) arr;
                 bonusAccount.deposit(2000);
                 System.out.println(bonusAccount.bonusPoint + " 포인트");
-            }else if(arr instanceof CheckingAccount) {
+            } else if (arr instanceof CheckingAccount) {
                 System.out.println("=========Casting CheckingAccount");
                 //new CheckingAccount() -> Account -> CheckingAccount
-                CheckingAccount checkingAccount = (CheckingAccount)arr;
+                CheckingAccount checkingAccount = (CheckingAccount) arr;
                 System.out.println("카드번호: " + checkingAccount.getCardNo());
                 int amount = checkingAccount.pay("0212", 100);
                 System.out.println(amount);
@@ -42,7 +42,7 @@ public class AccountTest2 {
     }
 
     private static void printAccount(Account[] accounts) {
-        for(Account arr:accounts) {
+        for (Account arr : accounts) {
             System.out.println(arr);
             System.out.println("==========================================");
         }

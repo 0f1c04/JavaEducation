@@ -10,6 +10,7 @@ public abstract class Book {
     }
 
     abstract void printTableOfContents(); //목차출력
+
     abstract void printExample();         //예제출력
 
     public String getTitle() {

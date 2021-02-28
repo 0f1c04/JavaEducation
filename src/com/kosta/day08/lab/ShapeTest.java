@@ -6,11 +6,11 @@ public class ShapeTest {
         arrayList[0] = new Rectangle(5, 6);
         arrayList[1] = new RectTriangle(6, 2);
 
-        for(Shape arr:arrayList) {
+        for (Shape arr : arrayList) {
             System.out.println("area: " + arr.getArea());
             System.out.println("perimeter: " + arr.getPerimeter());
-            if(arr instanceof Resizable) {
-                ((Resizable)arr).resize(0.5);
+            if (arr instanceof Resizable) {
+                ((Resizable) arr).resize(0.5);
                 System.out.println("new area: " + arr.getArea());
                 System.out.println("new perimeter: " + arr.getPerimeter());
             }

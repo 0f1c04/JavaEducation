@@ -87,7 +87,7 @@ public class QuizBankApplication {
 
         QuizAccount quizAccount = findAccount(ano);
 
-        if(quizAccount == null) {
+        if (quizAccount == null) {
             System.out.println("계좌가 없습니다.");
         }
 
@@ -109,7 +109,7 @@ public class QuizBankApplication {
 
         QuizAccount quizAccount = findAccount(ano);
 
-        if(quizAccount == null) {
+        if (quizAccount == null) {
             System.out.println("계좌가 없습니다.");
         }
 

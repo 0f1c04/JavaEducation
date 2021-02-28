@@ -7,8 +7,9 @@ public class Child extends Parent {
 
     //재정의 가능 (override, 덮어쓰기)
     String a = "Child에서 재정의된 변수";
+
     @Override
-     void method1() {
+    void method1() {
         System.out.println("Child에서 재정의된 메소드");
     }
 

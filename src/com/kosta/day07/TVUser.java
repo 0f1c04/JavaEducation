@@ -10,7 +10,7 @@ public class TVUser {
         tv.powerOn();
         tv.powerOff();
 
-        ((SamsungTV)tv).display();
+        ((SamsungTV) tv).display();
     }
 
     private static void method2() {

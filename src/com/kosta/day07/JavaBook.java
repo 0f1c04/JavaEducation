@@ -1,6 +1,6 @@
 package com.kosta.day07;
 
-public class JavaBook extends Book{
+public class JavaBook extends Book {
 
     public JavaBook(String title, int price) {
         super(title, price);

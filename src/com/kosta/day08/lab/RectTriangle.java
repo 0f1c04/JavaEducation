@@ -1,6 +1,6 @@
 package com.kosta.day08.lab;
 
-public class RectTriangle extends Shape{
+public class RectTriangle extends Shape {
     private double width;
     private double height;
 

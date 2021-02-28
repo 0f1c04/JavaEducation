@@ -14,19 +14,19 @@ public class Staff {
     }
 
     public void getTotalSalary() { //==하면안됨 why? 주소를 비교하는게 아니라 값을 비교해야해서
-       if (title.equals("부장"))  totalSalary = (int)(baseSalary + baseSalary * 0.25);
-        else if (title.equals("과장")) totalSalary = (int)(baseSalary + baseSalary * 0.15);
-        else totalSalary = (int)(baseSalary + baseSalary * 0.05);
+        if (title.equals("부장")) totalSalary = (int) (baseSalary + baseSalary * 0.25);
+        else if (title.equals("과장")) totalSalary = (int) (baseSalary + baseSalary * 0.15);
+        else totalSalary = (int) (baseSalary + baseSalary * 0.05);
 
-        switch(title) {
+        switch (title) {
             case "부장":
-                totalSalary = baseSalary + (int)(baseSalary * 0.25);
+                totalSalary = baseSalary + (int) (baseSalary * 0.25);
                 break;
             case "과장":
-                totalSalary = baseSalary + (int)(baseSalary * 0.15);
+                totalSalary = baseSalary + (int) (baseSalary * 0.15);
                 break;
             default:
-                totalSalary = baseSalary + (int)(baseSalary * 0.05);
+                totalSalary = baseSalary + (int) (baseSalary * 0.05);
                 break;
         }
     }

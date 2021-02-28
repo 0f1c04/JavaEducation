@@ -1,10 +1,19 @@
 package com.kosta.day07;
 
-class A {}
-class B extends A {}
-class C extends A {}
-class D extends B {}
-class E extends C {}
+class A {
+}
+
+class B extends A {
+}
+
+class C extends A {
+}
+
+class D extends B {
+}
+
+class E extends C {
+}
 
 public class 자동형변환 {
     public static void main(String[] args) {
@@ -18,7 +27,7 @@ public class 자동형변환 {
         System.out.println(tire.a);
 
         //되돌아가기
-        System.out.println(((GumhoTire)tire).gumho);
+        System.out.println(((GumhoTire) tire).gumho);
 
         printTire(new GumhoTire());
         printTire(new HankookTire());
@@ -26,19 +35,19 @@ public class 자동형변환 {
 
     private static void printTire(Tire tire) {
         System.out.println("---------");
-        if(tire instanceof GumhoTire)
-            System.out.println(((GumhoTire)tire).gumho);
-        if(tire instanceof HankookTire)
-            System.out.println(((HankookTire)tire).hankook);
+        if (tire instanceof GumhoTire)
+            System.out.println(((GumhoTire) tire).gumho);
+        if (tire instanceof HankookTire)
+            System.out.println(((HankookTire) tire).hankook);
     }
 
     private static void method5() {
         Tire tire = new GumhoTire();
-        if(tire instanceof HankookTire) {
+        if (tire instanceof HankookTire) {
             HankookTire hankookTire = (HankookTire) tire;
             System.out.println(tire);
-        }else if(tire instanceof GumhoTire) {
-            GumhoTire gumhoTire = (GumhoTire)tire;
+        } else if (tire instanceof GumhoTire) {
+            GumhoTire gumhoTire = (GumhoTire) tire;
             System.out.println(tire);
         }
     }
@@ -50,14 +59,14 @@ public class 자동형변환 {
 
         //강제형변환은 본래의 객체로 casting만 가능
         Account account = new CreditLineAccount(null, null, 0, 0);
-        CreditLineAccount creditLineAccount = (CreditLineAccount)account;
+        CreditLineAccount creditLineAccount = (CreditLineAccount) account;
     }
 
     private static void method3() {
         //자동형변환
         Account account = new CheckingAccount();
         //강제형변환
-        CheckingAccount checkingAccount = (CheckingAccount)account;
+        CheckingAccount checkingAccount = (CheckingAccount) account;
 
         System.out.println(checkingAccount);
     }
@@ -68,15 +77,15 @@ public class 자동형변환 {
         Account account = new CheckingAccount(); //자동
 
         //객체의 강제형변환: 자식타입 = (자식타입)부모객체
-        B b = (B)new A();
-        CheckingAccount checkingAccount = (CheckingAccount)new Account(); //강제
+        B b = (B) new A();
+        CheckingAccount checkingAccount = (CheckingAccount) new Account(); //강제
 
         //기본형의 강제형변환: 작은방 = (작은방타입)큰값
         int i = 10;
         double d = 3.14;
         d = i;      //가능
         //i = d;    //불가능
-        i = (int)d; //강제형변환
+        i = (int) d; //강제형변환
     }
 
     private static void method1() {

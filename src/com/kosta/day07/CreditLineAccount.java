@@ -1,7 +1,7 @@
 package com.kosta.day07;
 
 //마이너스 통장
-public class CreditLineAccount extends Account{
+public class CreditLineAccount extends Account {
     private int creditLine;
 
     public CreditLineAccount(String accNo, String ownerName, int balance, int creditLine) {
@@ -15,7 +15,7 @@ public class CreditLineAccount extends Account{
     //modifier(접근제한자)는 같거나 더 넓어져야한다.
     public int withdraw(int amount) {
         int balance = getBalance();
-        if(balance + creditLine < amount) {
+        if (balance + creditLine < amount) {
             System.out.println("잔액이 부족합니다.");
             return 0;
         }

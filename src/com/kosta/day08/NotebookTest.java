@@ -11,7 +11,7 @@ public class NotebookTest {
 
         notebook2.volumeUp(100);
         notebook2.volumeDown(20);
-        ((Notebook)notebook2).test();
+        ((Notebook) notebook2).test();
 
         method1(notebook1);
         method1(notebook2);
@@ -21,8 +21,8 @@ public class NotebookTest {
     private static void method1(Volume volume) {
         volume.volumeUp(100);
         volume.volumeDown(20);
-        if(volume instanceof Notebook)
-            ((Notebook)volume).test();
+        if (volume instanceof Notebook)
+            ((Notebook) volume).test();
         System.out.println(Volume.TITLE);
 
         volume.close();

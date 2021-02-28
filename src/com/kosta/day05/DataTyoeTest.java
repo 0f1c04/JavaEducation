@@ -6,7 +6,7 @@ class DataTypeTest {
     private boolean john;
     private String sarah = "Sarah Jang";
 
-    public static void main(String s[]) {
+    public static void main(String[] s) {
         new DataTypeTest().printMyType();
     }
 

@@ -1,6 +1,6 @@
 package com.kosta.day05;
 
-public class Employee extends Object{
+public class Employee extends Object {
     private String id;
     private String name;
     private int baseSalary;

@@ -1,6 +1,6 @@
 package com.kosta.day07;
 
-public class SpringBook extends Book{
+public class SpringBook extends Book {
 
     public SpringBook(String title, int price) {
         super(title, price);

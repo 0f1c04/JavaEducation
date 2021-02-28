@@ -6,14 +6,16 @@ package com.kosta.day07;
  * final method: 자식클래스가 재정의할 수 없는 메소드 (Override 불가능)
  */
 
-public class Account extends Object{
+public class Account extends Object {
     //Field
     private String accNo;
     private String ownerName;
     private int balance;
 
     //default 생서자는 제공된다.
-    public Account() { }
+    public Account() {
+    }
+
     //생성자 추가
     public Account(String accNo, String ownerName, int balance) {
         super(); //부모가 먼저 생성: Object
@@ -29,7 +31,7 @@ public class Account extends Object{
     }
 
     protected int withdraw(int amount) {
-        if(balance < amount) {
+        if (balance < amount) {
             System.out.println("잔액이 부족합니다.");
             return 0;
         }
@@ -65,7 +67,7 @@ public class Account extends Object{
     @Override
     public String toString() {
         //재정의 로직
-        return  " Account{" +
+        return " Account{" +
                 "accNo='" + accNo + '\'' +
                 ", ownerName='" + ownerName + '\'' +
                 ", balance=" + balance +
