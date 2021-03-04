@@ -15,7 +15,7 @@ public class Adder {
         int result = 0;
         String strNum = "";
         for(int i = 0; i < expr.length(); i++) {
-            char c = (char)expr.charAt(i);
+            char c = expr.charAt(i);
             if(c == '+') {
                 result += Integer.parseInt(strNum);
                 strNum = "";
