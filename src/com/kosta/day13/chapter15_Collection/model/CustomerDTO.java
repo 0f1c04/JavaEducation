@@ -1,7 +1,9 @@
 package com.kosta.day13.chapter15_Collection.model;
 
+import java.util.Objects;
+
 //DTO(Data Transfer Object)
-public class CustomerDTO {
+public class CustomerDTO implements Comparable<CustomerDTO>{
     private int customerID;
     private String customerName;
     private String customerPhoneNumber;
@@ -57,5 +59,30 @@ public class CustomerDTO {
         sb.append(", customerAddress='").append(customerAddress).append('\'');
         sb.append('}');
         return sb.toString();
+    }
+
+    //중복체 추가 (2021-03-05)
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CustomerDTO that = (CustomerDTO) o;
+        return customerID == that.customerID &&
+                Objects.equals(customerName, that.customerName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(customerID, customerName);
+    }
+
+    //Comparable 추가
+    @Override
+    public int compareTo(CustomerDTO obj) {
+        int aa = customerAddress.compareTo(obj.customerAddress);
+        if(aa == 0)
+            return customerID - obj.customerID; //음수면 왼쪽이 크다, 양수면 오른쪽이 크다
+        else
+            return aa;
     }
 }

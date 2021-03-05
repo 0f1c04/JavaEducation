@@ -4,30 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
-class Student2 {
-    private String name;
-    private String sex;
-    private int score;
-
-    public Student2(String name, String sex, int score) {
-        this.name = name;
-        this.sex = sex;
-        this.score = score;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public int getScore() {
-        return score;
-    }
-}
-
 public class PredicateExample {
     private static List<Student2> list = Arrays.asList(
             new Student2("홍길동", "남자", 90),
