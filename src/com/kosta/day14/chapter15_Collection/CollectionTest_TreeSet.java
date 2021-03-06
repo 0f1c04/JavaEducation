@@ -20,12 +20,12 @@ public class CollectionTest_TreeSet {
         data.add(new CustomerDTO(4, "고객4", "010-141-1111", "서울"));
 
         NavigableSet<CustomerDTO> descendingSet = data.descendingSet();
-        for(CustomerDTO cust:descendingSet) {
+        for (CustomerDTO cust : descendingSet) {
             System.out.println(cust);
         }
 
         NavigableSet<CustomerDTO> ascendingSet = descendingSet.descendingSet();
-        for(CustomerDTO cust:ascendingSet) {
+        for (CustomerDTO cust : ascendingSet) {
             System.out.println(cust);
         }
 
@@ -40,14 +40,14 @@ public class CollectionTest_TreeSet {
         data.add(new CustomerDTO(4, "고객4", "010-141-1111", "서울"));
 
         //pollFirst: 제일 낮은 객체를 가져오고 컬렉션 제거
-        while(!data.isEmpty()) {
+        while (!data.isEmpty()) {
             CustomerDTO cust = data.pollFirst();
             System.out.println(cust);
             System.out.println(data.size() + "명");
         }
 
         //pollLast: 제일 높은 객체를 가져오고 컬렉션 제거 //위에서 다 제거했으므로 의미없음
-        while(!data.isEmpty()) {
+        while (!data.isEmpty()) {
             CustomerDTO cust = data.pollLast();
             System.out.println(cust);
             System.out.println(data.size() + "명");
@@ -67,7 +67,7 @@ public class CollectionTest_TreeSet {
         //마지막 노드 구하기
         System.out.println("마지막 노드: " + data.last());
 
-        for(CustomerDTO cust:data) {
+        for (CustomerDTO cust : data) {
             System.out.println(cust);
         }
     }
@@ -79,7 +79,7 @@ public class CollectionTest_TreeSet {
         data.add("수");
         data.add("목");
         data.add("목"); //중복허용x
-        for(String s:data) {
+        for (String s : data) {
             System.out.println(s);
         }
     }
@@ -110,7 +110,7 @@ public class CollectionTest_TreeSet {
         //ceiling: 주어진 객체와 동등한 객체가 있으면 리턴, 없으면 바로 위 리
         System.out.println("기준보다 같거나 위의 노드: " + data.ceiling(50));
 
-        for(Integer i:data) {
+        for (Integer i : data) {
             System.out.println(i);
         }
     }

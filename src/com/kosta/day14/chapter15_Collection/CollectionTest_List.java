@@ -27,7 +27,7 @@ public class CollectionTest_List {
         //그래서 DTO에 중복체크 코드를 추가 (equals(), hashCode() Override ㄱ ㄱ)
 
         System.out.println(data);
-        for(CustomerDTO c : data) {
+        for (CustomerDTO c : data) {
             System.out.println(c);
         }
     }
@@ -58,7 +58,9 @@ public class CollectionTest_List {
 
         //1.일반 for로 읽기 ... 불가
         //2.확장 for로 읽기 ... 가능 (순서는 없음)
-        for(String s:set) { System.out.print(s + " "); }
+        for (String s : set) {
+            System.out.print(s + " ");
+        }
         System.out.println();
         //3.Iterator로 읽기(반복자)
         Iterator<String> iterator = set.iterator();
@@ -78,7 +80,7 @@ public class CollectionTest_List {
 
         //3.Iterator 반복자 이용해서 읽기
         Iterator<String> it = list.iterator();
-        while(it.hasNext()) {
+        while (it.hasNext()) {
             String s = it.next();
             System.out.print(s + " ");
         }
@@ -90,10 +92,10 @@ public class CollectionTest_List {
         //순서가 있다. 중복을 허용한다.
         List<String> list = new Vector<>();
         String[] days = {"월요일", "화요일", "수요일", "목요일", "토요일", "토요일", "일요일"};
-        for(String s:days) {
+        for (String s : days) {
             list.add(s);
         }
-        for(String s:list) {
+        for (String s : list) {
             System.out.print(s + " ");
         }
     }
@@ -103,10 +105,10 @@ public class CollectionTest_List {
         //순서가 있다. 중복을 허용한다. 체인처럼 관리
         List<String> list = new LinkedList<>();
         String[] days = {"월요일", "화요일", "수요일", "목요일", "토요일", "토요일", "일요일"};
-        for(String s:days) {
+        for (String s : days) {
             list.add(s);
         }
-        for(String s:list) {
+        for (String s : list) {
             System.out.print(s + " ");
         }
     }
@@ -116,7 +118,7 @@ public class CollectionTest_List {
         //순서가 있다. 중복을 허용한다.
         List<String> list = new ArrayList<>(3);
         String[] days = {"월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"};
-        for(String s:days) {
+        for (String s : days) {
             list.add(s);
         }
         //함수연습
@@ -124,22 +126,23 @@ public class CollectionTest_List {
         String s = list.get(6);
         System.out.println("6번쨰 값: " + s);
         //contains(), clear()
-        if(list.contains("화요일")) { //검색
+        if (list.contains("화요일")) { //검색
             System.out.println("화요일이 있습니다.");
         }
 
-        for(int i = 0; i < list.size(); i++) {
+        for (int i = 0; i < list.size(); i++) {
             System.out.println(i + "번째-->" + list.get(i));
         }
     }
 
     private static void print(List<String> list) {
-        for(String s:list) {
+        for (String s : list) {
             System.out.print(s + " ");
         }
     }
+
     private static void print2(List<String> list) {
-        for(int i = 0; i < list.size(); i++) {
+        for (int i = 0; i < list.size(); i++) {
             System.out.println(i + "번째-->" + list.get(i));
         }
     }

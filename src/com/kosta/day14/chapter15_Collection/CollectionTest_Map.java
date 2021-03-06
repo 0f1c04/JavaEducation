@@ -12,7 +12,7 @@ public class CollectionTest_Map {
 
     private static void method6() {
         Properties map = System.getProperties();
-        for(Entry entry:map.entrySet()) {
+        for (Entry entry : map.entrySet()) {
             System.out.println("key: " + entry.getKey());
             System.out.println("value: " + entry.getValue());
             System.out.println("==========================");
@@ -21,7 +21,7 @@ public class CollectionTest_Map {
 
     private static void method5() {
         Map<String, String> map = System.getenv();
-        for(Entry<String, String> entry:map.entrySet()) {
+        for (Entry<String, String> entry : map.entrySet()) {
             System.out.println("key: " + entry.getKey());
             System.out.println("value: " + entry.getValue());
             System.out.println("==========================");
@@ -53,7 +53,7 @@ public class CollectionTest_Map {
         System.out.println(cust + " 삭제");
 
         //출력
-        for(Map.Entry<Student2, CustomerDTO> entry:map.entrySet()) {
+        for (Map.Entry<Student2, CustomerDTO> entry : map.entrySet()) {
             System.out.println("key: " + entry.getKey());
             System.out.println("value: " + entry.getValue());
             System.out.println("==========================");
@@ -75,8 +75,8 @@ public class CollectionTest_Map {
 
         Collection<Integer> scores = map.values();
         int sum = 0;
-        for(Integer score : scores) {
-            sum+=score;
+        for (Integer score : scores) {
+            sum += score;
         }
         System.out.println("총점 : " + sum);
     }
@@ -116,7 +116,7 @@ public class CollectionTest_Map {
         }
         System.out.println("=============================");
         //확장 for문 사용
-        for(Map.Entry<String, Integer> entry:map.entrySet()) {
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
             System.out.println("---------");
             System.out.println("키: " + entry.getKey());
             System.out.println("값: " + entry.getValue());

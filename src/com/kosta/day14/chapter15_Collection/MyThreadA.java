@@ -12,9 +12,9 @@ public class MyThreadA extends Thread {
 
     @Override
     public void run() {
-        while(true) {
+        while (true) {
             synchronized (list) {
-                for(String s : list) {
+                for (String s : list) {
                     System.out.println(s + "읽기");
                 }
             }

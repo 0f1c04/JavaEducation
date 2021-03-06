@@ -12,7 +12,7 @@ public class MyThreadB extends Thread {
 
     @Override
     public void run() {
-        for(int i=0; true; i++) {
+        for (int i = 0; true; i++) {
             list.add(i + "추가");
         }
     }

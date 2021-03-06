@@ -18,13 +18,13 @@ public class CollectionTest_TreeMap {
         //TreeMap: Comparable.compareTo()를 구현해야 동작
         TreeMap<Car, CustomerDTO> data = new TreeMap<>();
         data.put(new Car("ABC", 1000),
-                 new CustomerDTO(1, "고객1", "010-1234-5678", "서울"));
+                new CustomerDTO(1, "고객1", "010-1234-5678", "서울"));
         data.put(new Car("DDD", 5000),
-                 new CustomerDTO(2, "고객2", "010-1235-5572", "부산"));
+                new CustomerDTO(2, "고객2", "010-1235-5572", "부산"));
         data.put(new Car("EEE", 2000),
-                 new CustomerDTO(3, "고객3", "010-4574-3412", "가산"));
+                new CustomerDTO(3, "고객3", "010-4574-3412", "가산"));
         data.put(new Car("ZZZ", 7000),
-                 new CustomerDTO(4, "고객4", "010-3222-8976", "나주"));
+                new CustomerDTO(4, "고객4", "010-3222-8976", "나주"));
 
         {
             Entry<Car, CustomerDTO> entry = data.firstEntry();
@@ -38,14 +38,14 @@ public class CollectionTest_TreeMap {
             System.out.println("==============================================");
         }
 
-        for(Entry<Car, CustomerDTO> entry:data.entrySet()) {
+        for (Entry<Car, CustomerDTO> entry : data.entrySet()) {
             System.out.println("key: " + entry.getKey());
             System.out.println("Value: " + entry.getValue());
             System.out.println("----------------------------------------------");
         }
 
         NavigableMap<Car, CustomerDTO> desc = data.descendingMap();
-        for(Entry<Car, CustomerDTO> entry:desc.entrySet()) {
+        for (Entry<Car, CustomerDTO> entry : desc.entrySet()) {
             System.out.println("key: " + entry.getKey());
             System.out.println("Value: " + entry.getValue());
             System.out.println("----------------------------------------------");
@@ -60,7 +60,7 @@ public class CollectionTest_TreeMap {
         data.put("최길동", 70);
         data.put("박길동", 60);
 
-        for(Map.Entry<String, Integer> entry:data.entrySet()) {
+        for (Map.Entry<String, Integer> entry : data.entrySet()) {
             System.out.println("key: " + entry.getKey());
             System.out.println("value: " + entry.getValue());
             System.out.println("==========================");

@@ -2,7 +2,7 @@ package com.kosta.day14.chapter15_Collection;
 
 import java.util.Objects;
 
-public class Car implements Comparable<Car>{
+public class Car implements Comparable<Car> {
     String model;
     int price;
 

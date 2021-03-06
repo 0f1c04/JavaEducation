@@ -14,7 +14,7 @@ public class PropertiesExample {
         Properties pro = new Properties();
         String fsrc = "src/com/kosta/day14/chapter15_Collection/oracleInfo.properties";
         pro.load(new FileReader(fsrc));
-        for(Entry entry:pro.entrySet()) {
+        for (Entry entry : pro.entrySet()) {
             System.out.println("key: " + entry.getKey());
             System.out.println("value: " + entry.getValue());
             System.out.println("==========================");

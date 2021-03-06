@@ -25,7 +25,7 @@ public class CollectionTest_StackQueue {
 //            System.out.println(i + "-->" + queue.poll());
 //        }
 
-        while(!queue.isEmpty()) {
+        while (!queue.isEmpty()) {
             System.out.println(queue.poll());
         }
 
@@ -41,7 +41,7 @@ public class CollectionTest_StackQueue {
         stack.add("목");
         stack.add("금");
         System.out.println(stack.size());
-        System.out.println(stack.get(stack.size()-1));
+        System.out.println(stack.get(stack.size() - 1));
         System.out.println(stack.peek());
     }
 }
