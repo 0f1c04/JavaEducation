@@ -7,7 +7,7 @@ public class LAB5 {
 
     public static int maxOrMin(IntBinaryOperator operator) {
         int result = scores[0];
-        for(int score:scores) {
+        for (int score : scores) {
             result = operator.applyAsInt(result, score);
         }
         return result;
@@ -17,7 +17,7 @@ public class LAB5 {
         //최대값 얻기
         int max = maxOrMin(
                 (a, b) -> {
-                    if(a <= b) return b;
+                    if (a <= b) return b;
                     else return a;
                 }
         );
@@ -26,7 +26,7 @@ public class LAB5 {
         //최소값 얻기
         int min = maxOrMin(
                 (a, b) -> {
-                    if(a <= b) return a;
+                    if (a <= b) return a;
                     else return b;
                 }
         );

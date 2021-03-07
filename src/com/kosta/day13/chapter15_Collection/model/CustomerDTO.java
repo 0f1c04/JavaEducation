@@ -3,13 +3,14 @@ package com.kosta.day13.chapter15_Collection.model;
 import java.util.Objects;
 
 //DTO(Data Transfer Object)
-public class CustomerDTO implements Comparable<CustomerDTO>{
+public class CustomerDTO implements Comparable<CustomerDTO> {
     private int customerID;
     private String customerName;
     private String customerPhoneNumber;
     private String customerAddress;
 
-    public CustomerDTO() { }
+    public CustomerDTO() {
+    }
 
     public CustomerDTO(int customerID, String customerName, String customerPhoneNumber, String customerAddress) {
         this.customerID = customerID;
@@ -80,7 +81,7 @@ public class CustomerDTO implements Comparable<CustomerDTO>{
     @Override
     public int compareTo(CustomerDTO obj) {
         int aa = customerAddress.compareTo(obj.customerAddress);
-        if(aa == 0)
+        if (aa == 0)
             return customerID - obj.customerID; //음수면 왼쪽이 크다, 양수면 오른쪽이 크다
         else
             return aa;

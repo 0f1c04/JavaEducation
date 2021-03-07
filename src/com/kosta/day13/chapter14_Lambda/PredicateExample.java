@@ -14,8 +14,8 @@ public class PredicateExample {
 
     public static double avg(Predicate<Student2> predicate) {
         int count = 0, sum = 0;
-        for(Student2 student:list) {
-            if(predicate.test(student)) {
+        for (Student2 student : list) {
+            if (predicate.test(student)) {
                 count++;
                 sum += student.getScore();
             }

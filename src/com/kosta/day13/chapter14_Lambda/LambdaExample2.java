@@ -1,10 +1,14 @@
 package com.kosta.day13.chapter14_Lambda;
 
 @FunctionalInterface
-interface Arg1Interface { void print(int num); }
+interface Arg1Interface {
+    void print(int num);
+}
 
 @FunctionalInterface
-interface Arg2Interface { int print(int num1, int num2); }
+interface Arg2Interface {
+    int print(int num1, int num2);
+}
 
 public class LambdaExample2 {
     public static void main(String[] args) {

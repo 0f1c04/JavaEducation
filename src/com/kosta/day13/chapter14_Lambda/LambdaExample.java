@@ -4,17 +4,19 @@ package com.kosta.day13.chapter14_Lambda;
 class MyRunnable extends Object implements Runnable {
     @Override
     public void run() {
-        for(int i = 0; i <= 10; i++) {
+        for (int i = 0; i <= 10; i++) {
             System.out.println(i);
         }
     }
 }
 
-@FunctionalInterface //람다표현식으로 사용 가능한지 컴파일단계에서 체크하는 어노테이션
+@FunctionalInterface
+        //람다표현식으로 사용 가능한지 컴파일단계에서 체크하는 어노테이션
 interface MyInterface {
     //public abstract 생략가능
     void myFunction();
 }
+
 class MyInterfaceImplClass implements MyInterface {
     @Override
     public void myFunction() {
@@ -51,7 +53,7 @@ public class LambdaExample {
     private static void method3() {
         //Lambda 표현식
         Runnable a = () -> {
-            for(int i = 0; i <= 15; i++) {
+            for (int i = 0; i <= 15; i++) {
                 System.out.println(i);
             }
         };
@@ -65,7 +67,7 @@ public class LambdaExample {
         Runnable a = new Runnable() {
             @Override
             public void run() {
-                for(int i = 0; i <= 15; i++) {
+                for (int i = 0; i <= 15; i++) {
                     System.out.println(i);
                 }
             }

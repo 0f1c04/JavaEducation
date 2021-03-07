@@ -8,6 +8,7 @@ interface MyFunctionalInterface {
 public class UsingThis {
     public int outerField = 10;
     String innerStringField = "outer java";
+
     class Inner {
         int innerField = 20;
         String innerStringField = "inner java";

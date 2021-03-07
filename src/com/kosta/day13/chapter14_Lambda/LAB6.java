@@ -9,12 +9,12 @@ public class LAB6 {
     };
 
     //avg() 메소드
-    static double avg(ToIntFunction<Student> toIntFunction){
+    static double avg(ToIntFunction<Student> toIntFunction) {
         int sum = 0;
-        for(Student student:students) {
+        for (Student student : students) {
             sum += toIntFunction.applyAsInt(student);
         }
-        return (double)sum / students.length;
+        return (double) sum / students.length;
     }
 
     public static void main(String[] args) {

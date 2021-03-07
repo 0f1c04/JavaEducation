@@ -9,8 +9,7 @@ public class LambdaExample4 {
 
     private static void method1() {
         Predicate<String> p = a -> {
-            if(a.length() >= 3) return true;
-            else return false;
+            return a.length() >= 3;
         };
         System.out.println(p.test("hello"));
     }

@@ -21,29 +21,33 @@ public class CustomerDAO {
         //모든 고객을 조회
         return customerList;
     }
+
     public CustomerDTO selectByID(int customerID) {
         //해당 고객을 ID로 조회
-        for(CustomerDTO customers:customerList) {
-            if(customers.getCustomerID() == customerID) return customers;
+        for (CustomerDTO customers : customerList) {
+            if (customers.getCustomerID() == customerID) return customers;
         }
         return null;
     }
+
     public CustomerDTO selectByPhoneNumber(String customerPhoneNumber) {
         //해당 고객을 전화번호로 조회
-        for(CustomerDTO customers:customerList) {
-            if(customers.getCustomerPhoneNumber().equals(customerPhoneNumber)) return customers;
+        for (CustomerDTO customers : customerList) {
+            if (customers.getCustomerPhoneNumber().equals(customerPhoneNumber)) return customers;
         }
         return null;
     }
+
     public int insert(CustomerDTO customerDTO) {
         //해당 고객을 정보 입력
         customerList.add(customerDTO);
         return 1;
     }
+
     public int update(CustomerDTO customerDTO) {
         //해당 고객의 정보 갱신
-        for(int i = 0; i < customerList.size(); i++) {
-            if(customerList.get(i).getCustomerID() == customerDTO.getCustomerID()) {
+        for (int i = 0; i < customerList.size(); i++) {
+            if (customerList.get(i).getCustomerID() == customerDTO.getCustomerID()) {
                 customerList.get(i).setCustomerID(customerDTO.getCustomerID());
                 customerList.get(i).setCustomerName(customerDTO.getCustomerName());
                 customerList.get(i).setCustomerPhoneNumber(customerDTO.getCustomerPhoneNumber());
@@ -52,10 +56,11 @@ public class CustomerDAO {
         }
         return 1;
     }
+
     public int delete(int customerID) {
         //해당 고객의 정보 삭제
-        for(int i = 0; i < customerList.size(); i++) {
-            if(customerList.get(i).getCustomerID() == customerID) {
+        for (int i = 0; i < customerList.size(); i++) {
+            if (customerList.get(i).getCustomerID() == customerID) {
                 customerList.remove(i);
                 break;
             }

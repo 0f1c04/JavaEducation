@@ -10,7 +10,7 @@ import java.util.List;
 public class CustomerView {
     public static void display(List<CustomerDTO> customerList) {
         System.out.println("=======고객정보 List=======");
-        for(CustomerDTO customers:customerList) {
+        for (CustomerDTO customers : customerList) {
 //            System.out.println(customers.getCustomerName());
 //            System.out.println(customers.getCustomerID());
 //            System.out.println(customers.getCustomerPhoneNumber());
@@ -18,10 +18,12 @@ public class CustomerView {
             System.out.println(customers);
         }
     }
+
     public static void display(CustomerDTO customer) {
         System.out.println("=======고객정보=======");
         System.out.println(customer);
     }
+
     public static void display(String message) {
         System.out.println(message);
     }

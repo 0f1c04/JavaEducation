@@ -35,15 +35,15 @@ public class FunctionExample1 {
             new Student("배대장", 95, 93)
     );
 
-    public static void printString (Function<Student, String> function) {
-        for(Student student:list) { //list에 저장된 항목만큼 반복
+    public static void printString(Function<Student, String> function) {
+        for (Student student : list) { //list에 저장된 항목만큼 반복
             System.out.println(function.apply(student) + " ");
         }
         System.out.println();
     }
 
     public static void printInt(ToIntFunction<Student> function) {
-        for(Student student:list) { //list에 저장된 항목만큼 반복
+        for (Student student : list) { //list에 저장된 항목만큼 반복
             System.out.println(function.applyAsInt(student) + " ");
         }
         System.out.println();

@@ -18,7 +18,7 @@ public class CollectionTest {
         data.add("L");
         data.add("O");
 
-        for(String s:data) {
+        for (String s : data) {
             System.out.println(s);
         }
     }
@@ -31,7 +31,7 @@ public class CollectionTest {
         data.add("L");
         data.add("O");
 
-        for(String s:data) {
+        for (String s : data) {
             System.out.println(s);
         }
     }
@@ -39,7 +39,7 @@ public class CollectionTest {
     private static void method2() { //ArrayList 제네릭 사용
         ArrayList<String> data = new ArrayList<>();
         data.add(0, "hello");
-        data.add(1, new String("Hello"));
+        data.add(1, "Hello");
         data.add("hello");
         data.add("hello");
         data.add("hello");
@@ -47,7 +47,7 @@ public class CollectionTest {
         data.remove(1);
         System.out.println(data.size() + "개");
 
-        for(String s:data) {
+        for (String s : data) {
             System.out.println(s);
         }
     }
@@ -64,7 +64,7 @@ public class CollectionTest {
         data.add(3.14);
         data.add(2, "Hello");
 
-        for(Object s:data) {
+        for (Object s : data) {
             System.out.println(s);
         }
     }
