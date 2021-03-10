@@ -9,10 +9,10 @@ public class Prob1 {
     }
 
     private static void printMaxScore(String[] array) {
-        Pattern pattern = Pattern.compile("([가-힣]{3,4})(\\d{2,3})([가-힣])");
+        Pattern pattern = Pattern.compile("([가-힣]{3,4})(\\d{1,3})([가-힣])");
         String[] name = new String[array.length];
         Integer[] score = new Integer[array.length];
-        int max = 0, maxName = 0;
+        int maxScore = 0, maxName = 0;
 
         for (int i = 0; i < array.length; i++) {
             Matcher matcher = pattern.matcher(array[i]);
@@ -20,11 +20,11 @@ public class Prob1 {
                 name[i] = matcher.group(1);
                 score[i] = Integer.parseInt(matcher.group(2));
             }
-            if (max < score[i]) {
-                max = score[i];
+            if (maxScore < score[i]) {
+                maxScore = score[i];
                 maxName = i;
             }
         }
-        System.out.println("최고점수는 " + name[maxName] + "님 " + max + "점입니다.");
+        System.out.println("최고점수는 " + name[maxName] + "님 " + maxScore + "점입니다.");
     }
 }

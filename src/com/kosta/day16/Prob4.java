@@ -63,8 +63,7 @@ public class Prob4 {
             e.printStackTrace();
         }
         System.out.println("*readFile결과입니다.***********************");
-            System.out.println(hashSet);
-
+        System.out.println(hashSet);
     }
 }
 
